@@ -1,5 +1,9 @@
-var convert = require('../lib');
-var testItems = require('./test-items');
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+var convert = require('xml-js');
+var testItems = require('xml-js/test/test-items');
+var describe = require("tape-compat").describe;
+var expect = require("tape-compat").expect;
+var it = require("tape-compat").it;
 
 /*global describe,it,expect*/
 
@@ -256,3 +260,5 @@ describe('Testing xml2js.js:', function () {
   });
 
 });
+
+require = requireOrig;});

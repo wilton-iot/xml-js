@@ -1,4 +1,8 @@
-var helper = require('../lib/options-helper');
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+var helper = require('xml-js/lib/options-helper');
+var describe = require("tape-compat").describe;
+var expect = require("tape-compat").expect;
+var it = require("tape-compat").it;
 
 /*global describe,it,expect*/
 
@@ -66,3 +70,5 @@ describe('Testing options.js:', function () {
   });
 
 });
+
+require = requireOrig;});

@@ -107,5 +107,22 @@
     "unminified-webpack-plugin": "^1.4.2",
     "watch": "^1.0.1",
     "webpack": "^3.10.0"
+  },
+  "wilton": {
+    "excludes": [
+        "artwork",
+        "bin",
+        "dist",
+        "lib/array-helper.js",
+        "test",
+        "types",
+        "appveyor.yml",
+        "circle.yml",
+        "index.js",
+        "package-lock.json",
+        "runAllTests.js",
+        "webpack.config.js",
+        "yarn.lock"
+    ]
   }
 }

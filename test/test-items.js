@@ -1,3 +1,4 @@
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var cases = [
   {
     desc: 'declaration <?xml>',
@@ -255,3 +256,5 @@ module.exports = function (direction, options) {
   }
   return tests;
 };
+
+require = requireOrig;});

@@ -1,5 +1,9 @@
-var convert = require('../lib');
-var Script = require('vm').Script;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+var convert = require('xml-js');
+//var Script = require('vm').Script;
+var describe = require("tape-compat").describe;
+var expect = require("tape-compat").expect;
+var it = require("tape-compat").it;
 
 /*global describe,it,expect*/
 
@@ -404,6 +408,7 @@ describe('Testing js2xml.js:', function () {
       '  output = convert.js2xml(obj, { compact: true });\n' +
       '})()\n';
 
+/*
       var executableScript = new Script(scriptCode, {
         displayErrors: true,
       });
@@ -412,9 +417,12 @@ describe('Testing js2xml.js:', function () {
         executableScript.runInNewContext(context);
         expect(context.output).toEqual('<customers><customer status="silver">John Doe</customer><customer status="gold">Alice Allgood</customer></customers>');
       });
+*/
     });
 
 
   });
 
 });
+
+require = requireOrig;});
