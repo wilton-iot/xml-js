@@ -120,7 +120,7 @@
         "circle.yml",
         "index.js",
         "package-lock.json",
-        "runAllTests.js",
+        "test.js",
         "webpack.config.js",
         "yarn.lock"
     ]
