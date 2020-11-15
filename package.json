@@ -113,7 +113,6 @@
         "artwork",
         "bin",
         "dist",
-        "lib/array-helper.js",
         "test",
         "types",
         "appveyor.yml",
